@@ -75,6 +75,15 @@
       </div>
     </header>
 
+    <!-- wave svg -->
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path
+        fill="#2d25a0"
+        fill-opacity="1"
+        d="M0,256L34.3,229.3C68.6,203,137,149,206,154.7C274.3,160,343,224,411,218.7C480,213,549,139,617,128C685.7,117,754,171,823,170.7C891.4,171,960,117,1029,117.3C1097.1,117,1166,171,1234,197.3C1302.9,224,1371,224,1406,224L1440,224L1440,0L1405.7,0C1371.4,0,1303,0,1234,0C1165.7,0,1097,0,1029,0C960,0,891,0,823,0C754.3,0,686,0,617,0C548.6,0,480,0,411,0C342.9,0,274,0,206,0C137.1,0,69,0,34,0L0,0Z"
+      ></path>
+    </svg>
+
     <main>
       <!-- players section -->
       <section id="players" class="players">
@@ -306,159 +315,189 @@
 
       <!-- highlight matches -->
       <section class="matches">
-        <!-- argentina vs brazil -->
-        <div class="match">
-          <!-- video with title -->
-          <div class="match__video-title">
-            <h3 class="match__title">Argentina Vs Brazil</h3>
-            <iframe
-              class="match__video"
-              width="560"
-              height="315"
-              src="https://www.youtube.com/embed/sDFr2Yzd-8s"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
-            ></iframe>
+        <h2>All Highlights</h2>
+        <div class="players matches--container">
+          <!-- argentina vs brazil -->
+          <div class="player match__bg--one">
+            <!-- video -->
+            <div class="player__image">
+              <iframe
+                class="matches__video"
+                src="https://www.youtube.com/embed/sDFr2Yzd-8s"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+
+            <!-- video title -->
+            <h3 class="player__title match--title">Argentina Vs Brazil</h3>
+
+            <!-- video description -->
+            <p class="player__desc match--desc">
+              The final match of Copa America 2021. such an exciting game. you
+              have to watch this
+            </p>
           </div>
 
-          <!-- video description -->
-          <p class="match__desc">
-            The final match of Copa America 2021. such an exciting game. you
-            have to watch this
-          </p>
-        </div>
+          <!-- Brazil Vs Peru -->
+          <div class="player match__bg--two">
+            <!-- video -->
+            <div class="player__image">
+              <iframe
+                class="matches__video"
+                src="https://www.youtube.com/embed/SAMjSwSa4Dk"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
 
-        <!-- Brazil Vs Peru -->
-        <div class="match">
-          <!-- video with title -->
-          <div class="match__video-title">
-            <h3 class="match__title">Brazil Vs Peru</h3>
-            <iframe
-              class="match__video"
-              width="560"
-              height="315"
-              src="https://www.youtube.com/embed/SAMjSwSa4Dk"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
-            ></iframe>
+            <!-- video title -->
+            <h3 class="player__title">Brazil Vs Peru</h3>
+
+            <!-- video description -->
+            <p class="player__desc">
+              The semi-final match of Copa America 2021. such an exciting game.
+              you haveto watch this
+            </p>
           </div>
 
-          <!-- video description -->
-          <p class="match__desc">
-            The semi-final match of Copa America 2021. such an exciting game.
-            you haveto watch this
-          </p>
-        </div>
+          <!-- Argentina Vs Colombia -->
+          <div class="player match__bg--one">
+            <!-- video  -->
+            <div class="player__image">
+              <iframe
+                class="matches__video"
+                src="https://www.youtube.com/embed/NbvnpBwA2Zs"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
 
-        <!-- Argentina Vs Colombia -->
-        <div class="match">
-          <!-- video with title -->
-          <div class="match__video-title">
-            <h3 class="match__title">Argentina Vs Colombia</h3>
-            <iframe
-              class="match__video"
-              width="560"
-              height="315"
-              src="https://www.youtube.com/embed/NbvnpBwA2Zs"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
-            ></iframe>
+            <!-- video title -->
+            <h3 class="player__title">Argentina Vs Colombia</h3>
+
+            <!-- video description -->
+            <p class="player__desc">
+              The semi-final match of Copa America 2021. This game ends in
+              penalty. Both team give their full effort to win the match.
+            </p>
           </div>
 
-          <!-- video description -->
-          <p class="match__desc">
-            The semi-final match of Copa America 2021. This game ends in
-            penalty. Both team give their full effort to win the match.
-          </p>
-        </div>
+          <!-- Colombia vs Peru -->
+          <div class="player match__bg--two">
+            <!-- video -->
+            <div class="player__image">
+              <iframe
+                class="matches__video"
+                src="https://www.youtube.com/embed/ngt9OM4gzkY"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
 
-        <!-- Colombia vs Peru -->
-        <div class="match">
-          <!-- video with title -->
-          <div class="match__video-title">
-            <h3 class="match__title">Colombia Vs Peru</h3>
-            <iframe
-              class="match__video"
-              width="560"
-              height="315"
-              src="https://www.youtube.com/embed/ngt9OM4gzkY"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
-            ></iframe>
+            <!-- video title -->
+            <h3 class="player__title">Colombia Vs Peru</h3>
+
+            <!-- video description -->
+            <p class="player__desc">
+              A match of Copa America 2021. another exciting game. Grab your
+              popcorn and watch this.
+            </p>
           </div>
-
-          <!-- video description -->
-          <p class="match__desc">
-            A match of Copa America 2021. another exciting game. Grab your
-            popcorn and watch this.
-          </p>
         </div>
       </section>
 
-      <section id="partners" class="partners">
+      <!-- partners -->
+      <section id="partners" class="players partners">
+        <!-- adidas -->
         <div class="partner">
           <img src="assets/images/partners/partner-1.png" alt="" />
         </div>
+
+        <!-- walmart -->
         <div class="partner">
           <img src="assets/images/partners/partner-2.png" alt="" />
         </div>
+
+        <!-- microsoft -->
         <div class="partner">
           <img src="assets/images/partners/partner-3.png" alt="" />
         </div>
+
+        <!-- google -->
         <div class="partner">
           <img src="assets/images/partners/partner-4.png" alt="" />
         </div>
+
+        <!-- cocacola -->
         <div class="partner">
           <img src="assets/images/partners/partner-5.png" alt="" />
         </div>
+
+        <!-- amazon -->
         <div class="partner">
           <img src="assets/images/partners/partner-6.png" alt="" />
         </div>
       </section>
     </main>
 
+    <!-- wave svg -->
+    <svg
+      class="down-svg"
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 1440 320"
+    >
+      <path
+        fill="#0099ff"
+        fill-opacity="1"
+        d="M0,256L34.3,229.3C68.6,203,137,149,206,154.7C274.3,160,343,224,411,218.7C480,213,549,139,617,128C685.7,117,754,171,823,170.7C891.4,171,960,117,1029,117.3C1097.1,117,1166,171,1234,197.3C1302.9,224,1371,224,1406,224L1440,224L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"
+      ></path>
+    </svg>
+
     <footer id="info" class="footer">
-      <!-- footer logo -->
-      <div class="footer__logo">
-        <img src="assets/images/logo/Logo.png" alt="" />
+      <div class="footer__container">
+        <!-- footer logo -->
+        <div class="footer__logo">
+          <img src="assets/images/logo/Logo.png" alt="" />
+        </div>
+
+        <!-- footer nav -->
+        <nav>
+          <ul class="nav__list nav__list--direction">
+            <li class="nav__item">
+              <a class="nav__link--override" href="#"
+                ><i class="fab fa-instagram social--icon"></i
+              ></a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link--override" href="#"
+                ><i class="fab fa-dribbble social--icon"></i
+              ></a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link--override" href="#"
+                ><i class="fab fa-twitter social--icon"></i
+              ></a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link--override" href="#"
+                ><i class="fab fa-youtube social--icon"></i
+              ></a>
+            </li>
+          </ul>
+        </nav>
+
+        <!-- footer description -->
+        <p class="footer__desc">Copyright &copy; 2021 Football</p>
       </div>
-
-      <!-- footer nav -->
-      <nav>
-        <ul class="nav__list nav__list--direction">
-          <li class="nav__item">
-            <a class="nav__link--override" href="#"
-              ><i class="fab fa-instagram social--icon"></i
-            ></a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link--override" href="#"
-              ><i class="fab fa-dribbble social--icon"></i
-            ></a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link--override" href="#"
-              ><i class="fab fa-twitter social--icon"></i
-            ></a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link--override" href="#"
-              ><i class="fab fa-youtube social--icon"></i
-            ></a>
-          </li>
-        </ul>
-      </nav>
-
-      <!-- footer description -->
-      <p class="footer__desc">Copyright &copy; 2021 Football</p>
     </footer>
   </body>
 </html>
