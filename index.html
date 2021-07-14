@@ -5,6 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>football</title>
+    <!-- favicon -->
+    <link
+      rel="shortcut icon"
+      href="assets/favicon/football.png"
+      type="image/x-icon"
+    />
     <!-- styles -->
     <link rel="stylesheet" href="styles/style.css" />
 
@@ -15,11 +21,14 @@
     ></script>
   </head>
   <body>
-    <!-- header -->
+    <!-- ******************** 
+            HEADER
+    ******************** -->
     <header class="header">
       <div class="header__container">
         <!-- hide-show icon for navbar -->
         <input type="checkbox" name="check" id="check" />
+
         <label for="check"><i class="fas fa-hamburger"></i></label>
 
         <!-- navbar -->
@@ -28,18 +37,23 @@
             <li class="nav__item">
               <a class="nav__link" href="#home">Home</a>
             </li>
+
             <li class="nav__item">
               <a class="nav__link" href="#players">Players</a>
             </li>
+
             <li class="nav__item">
               <a class="nav__link" href="#highlights">Highlights</a>
             </li>
+
             <li class="nav__item">
               <a class="nav__link" href="#partners">partners</a>
             </li>
+
             <li class="nav__item">
               <a class="nav__link" href="#info">info</a>
             </li>
+
             <li class="nav__item nav__item--align-right">
               <button class="btn">
                 <i class="fas fa-sign-in-alt"></i>
@@ -59,12 +73,10 @@
             </button>
           </div>
 
-          <!-- banner image
-                //to do
-                1. try to add some animation here (like player clicking the football when the user hovers over it)
-            -->
+          <!-- banner imgae -->
           <div class="banner__image">
             <img
+              class="banner__image--animate"
               src="assets/images/banner/banner.png"
               alt="a player clicking football"
             />
@@ -82,8 +94,14 @@
       ></path>
     </svg>
 
+    <!-- ******************** 
+            MAIN      
+    ******************** -->
+
     <main>
-      <!-- players section -->
+      <!-- ************* 
+          PLAYER
+      ************* -->
       <section id="players" class="players">
         <!-- Neymar Jr -->
         <div class="player">
@@ -291,7 +309,9 @@
         </div>
       </section>
 
-      <!-- hightlights -->
+      <!-- ************* 
+          HIGHLIGHTS
+      ************* -->
       <section id="highlights" class="highlights">
         <!-- highlights description -->
         <div class="highlights__desc">
@@ -312,10 +332,6 @@
         <div class="highlights__image">
           <img src="assets/images/highlights/match.png" alt="match higlights" />
         </div>
-
-        <!-- //todo
-            1. add two extra section here
-        -->
       </section>
 
       <!-- wave svg -->
@@ -327,9 +343,14 @@
         ></path>
       </svg>
 
-      <!-- highlight matches -->
+      <!-- ************* 
+          MATCHES
+      ************* -->
       <section class="matches">
+        <!-- section title -->
         <h2 class="section__title">All Matches</h2>
+
+        <!-- matches container -->
         <div class="players matches--container">
           <!-- argentina vs brazil -->
           <div class="player match__bg--one">
@@ -348,7 +369,7 @@
             <h3 class="player__title match--title">Argentina Vs Brazil</h3>
 
             <!-- video description -->
-            <p class="player__desc match--desc">
+            <p class="player__desc">
               The final match of Copa America 2021. such an exciting game. you
               have to watch this
             </p>
@@ -368,7 +389,7 @@
             </div>
 
             <!-- video title -->
-            <h3 class="player__title">Brazil Vs Peru</h3>
+            <h3 class="player__title match--title">Brazil Vs Peru</h3>
 
             <!-- video description -->
             <p class="player__desc">
@@ -391,7 +412,7 @@
             </div>
 
             <!-- video title -->
-            <h3 class="player__title">Argentina Vs Colombia</h3>
+            <h3 class="player__title match--title">Argentina Vs Colombia</h3>
 
             <!-- video description -->
             <p class="player__desc">
@@ -414,7 +435,7 @@
             </div>
 
             <!-- video title -->
-            <h3 class="player__title">Colombia Vs Peru</h3>
+            <h3 class="player__title match--title">Colombia Vs Peru</h3>
 
             <!-- video description -->
             <p class="player__desc">
@@ -425,9 +446,13 @@
         </div>
       </section>
 
-      <!-- partners -->
+      <!-- ************* 
+          PARTNERS
+      ************* -->
       <section id="partners">
+        <!-- section title -->
         <h2 class="section__title">Our Partners</h2>
+
         <div class="players partners">
           <!-- adidas -->
           <div class="partner">
@@ -475,7 +500,11 @@
       ></path>
     </svg>
 
+    <!-- ******************** 
+            FOOTER     
+    ******************** -->
     <footer id="info" class="footer">
+      <!-- footer container -->
       <div class="footer__container">
         <!-- footer logo -->
         <div class="footer__logo">
