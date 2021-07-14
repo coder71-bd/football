@@ -17,58 +17,60 @@
   <body>
     <!-- header -->
     <header class="header">
-      <!-- tricks for mobile devices -->
-      <input type="checkbox" name="check" id="check" />
-      <label for="check"><i class="fas fa-hamburger"></i></label>
+      <div class="header__container">
+        <!-- hide-show icon for navbar -->
+        <input type="checkbox" name="check" id="check" />
+        <label for="check"><i class="fas fa-hamburger"></i></label>
 
-      <!-- nav -->
-      <nav class="nav">
-        <ul class="nav__list">
-          <li class="nav__item">
-            <a class="nav__link" href="#home">Home</a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link" href="#players">Players</a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link" href="#highlights">Highlights</a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link" href="#contact">techniques</a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link" href="#">contact</a>
-          </li>
-          <li class="nav__item nav__item--align-right">
-            <a href="#">
-              <button class="btn">
-                <i class="fas fa-sign-in-alt"></i>
-                <span>login</span>
-              </button>
-            </a>
-          </li>
-        </ul>
-      </nav>
+        <!-- navbar -->
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a class="nav__link" href="#home">Home</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#players">Players</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#highlights">Highlights</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#partners">partners</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#info">info</a>
+            </li>
+            <li class="nav__item nav__item--align-right">
+              <a href="#">
+                <button class="btn">
+                  <i class="fas fa-sign-in-alt"></i>
+                  <span>login</span>
+                </button>
+              </a>
+            </li>
+          </ul>
+        </nav>
 
-      <!-- banner -->
-      <div id="home" class="banner">
-        <!-- banner description -->
-        <div class="banner__desc">
-          <h1 class="banner__txt">conmebol copa america 2021</h1>
-          <button class="btn">
-            Watch Live <i class="fas fa-arrow-right"></i>
-          </button>
-        </div>
+        <!-- banner -->
+        <div id="home" class="banner">
+          <!-- banner description -->
+          <div class="banner__desc">
+            <h1 class="banner__txt">conmebol copa america 2021</h1>
+            <button class="btn">
+              Watch Live <i class="fas fa-arrow-right"></i>
+            </button>
+          </div>
 
-        <!-- banner image
-              //to do
-              1. try to add some animation here (like player clicking the football when the user hovers over it)
-          -->
-        <div class="banner__image">
-          <img
-            src="assets/images/banner/banner.png"
-            alt="a player clicking football"
-          />
+          <!-- banner image
+                //to do
+                1. try to add some animation here (like player clicking the football when the user hovers over it)
+            -->
+          <div class="banner__image">
+            <img
+              src="assets/images/banner/banner.png"
+              alt="a player clicking football"
+            />
+          </div>
         </div>
       </div>
     </header>
@@ -282,9 +284,9 @@
           <h2 class="highlights__title">all highlights copa america 2021</h2>
 
           <p class="highlights__txt">
-            Horray! now you can see all the higlight matches without any costs.
-            Feel free to chekc them out. Click the link below for available
-            matches.
+            Horray! now you can see all the higlight matches of copa america
+            2021 without any costs. Feel free to check them out. Click the link
+            below or scroll down for available matches.
           </p>
 
           <button class="btn">
@@ -301,9 +303,129 @@
             1. add two extra section here
         -->
       </section>
+
+      <!-- highlight matches -->
+      <section class="matches">
+        <!-- argentina vs brazil -->
+        <div class="match">
+          <!-- video with title -->
+          <div class="match__video-title">
+            <h3 class="match__title">Argentina Vs Brazil</h3>
+            <iframe
+              class="match__video"
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/sDFr2Yzd-8s"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+
+          <!-- video description -->
+          <p class="match__desc">
+            The final match of Copa America 2021. such an exciting game. you
+            have to watch this
+          </p>
+        </div>
+
+        <!-- Brazil Vs Peru -->
+        <div class="match">
+          <!-- video with title -->
+          <div class="match__video-title">
+            <h3 class="match__title">Brazil Vs Peru</h3>
+            <iframe
+              class="match__video"
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/SAMjSwSa4Dk"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+
+          <!-- video description -->
+          <p class="match__desc">
+            The semi-final match of Copa America 2021. such an exciting game.
+            you haveto watch this
+          </p>
+        </div>
+
+        <!-- Argentina Vs Colombia -->
+        <div class="match">
+          <!-- video with title -->
+          <div class="match__video-title">
+            <h3 class="match__title">Argentina Vs Colombia</h3>
+            <iframe
+              class="match__video"
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/NbvnpBwA2Zs"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+
+          <!-- video description -->
+          <p class="match__desc">
+            The semi-final match of Copa America 2021. This game ends in
+            penalty. Both team give their full effort to win the match.
+          </p>
+        </div>
+
+        <!-- Colombia vs Peru -->
+        <div class="match">
+          <!-- video with title -->
+          <div class="match__video-title">
+            <h3 class="match__title">Colombia Vs Peru</h3>
+            <iframe
+              class="match__video"
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/ngt9OM4gzkY"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+
+          <!-- video description -->
+          <p class="match__desc">
+            A match of Copa America 2021. another exciting game. Grab your
+            popcorn and watch this.
+          </p>
+        </div>
+      </section>
+
+      <section id="partners" class="partners">
+        <div class="partner">
+          <img src="assets/images/partners/partner-1.png" alt="" />
+        </div>
+        <div class="partner">
+          <img src="assets/images/partners/partner-2.png" alt="" />
+        </div>
+        <div class="partner">
+          <img src="assets/images/partners/partner-3.png" alt="" />
+        </div>
+        <div class="partner">
+          <img src="assets/images/partners/partner-4.png" alt="" />
+        </div>
+        <div class="partner">
+          <img src="assets/images/partners/partner-5.png" alt="" />
+        </div>
+        <div class="partner">
+          <img src="assets/images/partners/partner-6.png" alt="" />
+        </div>
+      </section>
     </main>
 
-    <footer class="footer">
+    <footer id="info" class="footer">
       <!-- footer logo -->
       <div class="footer__logo">
         <img src="assets/images/logo/Logo.png" alt="" />
