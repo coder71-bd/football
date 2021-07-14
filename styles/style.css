@@ -1,3 +1,250 @@
-h1 {
-    color: red;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
+html,
+body {
+  font-size: 10px;
+}
+
+/* utilities */
+
+:root {
+  --btn-bg-color: #ed2c6d;
+  --btn-color: #fff;
+  --btn-bg_hover-color: #ed2cedcc;
+  --font-size: 1.6rem;
+  --center-align: 0 auto;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  padding: 10px 24px;
+  background-color: var(--btn-bg-color);
+  color: var(--btn-color);
+  transition: background-color 0.5s ease-out;
+  border: 0;
+}
+
+.btn:hover {
+  background-color: var(--btn-bg_hover-color);
+  cursor: pointer;
+}
+
+/* header start */
+header {
+  /* common vars */
+  --bg-color: #2d25a0;
+  --color: #fff;
+
+  /* nav vars */
+  --nav-link_hover-color: #35f0b2;
+  --nav-link_hover-font-size: 1.8rem;
+
+  /* banner */
+  --image-size: 55.601em;
+  --banner-desc-width: 48.5em;
+  --txt-size: 6.4rem;
+}
+
+.header {
+  background-color: var(--bg-color);
+  color: var(--color);
+}
+
+/* nav */
+.nav {
+  margin: 0 12em 6.7em 15.6em;
+  padding-top: 4.2em;
+}
+
+.nav__list {
+  display: flex;
+  align-items: center;
+}
+
+.nav__item {
+  list-style: none;
+  margin-right: 3.6em;
+}
+
+.nav__link {
+  text-decoration: none;
+  color: var(--color);
+  font-size: var(--font-size);
+  padding-bottom: 0.12em;
+  transition: all 0.3s ease-out;
+}
+
+.nav__link:hover {
+  border-bottom: 0.3em dotted #fff;
+  color: var(--nav-link_hover-color);
+  font-size: var(--nav-link_hover-font-size);
+}
+
+.fa-sign-in-alt {
+  padding-right: 0.8em;
+}
+
+.nav__item--align-right {
+  margin-left: auto;
+}
+
+/* banner */
+.banner {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 1em;
+}
+
+.banner__desc {
+  max-width: var(--banner-desc-width);
+  margin: 0.5em;
+}
+
+.banner__txt {
+  font-size: var(--txt-size);
+  margin-bottom: 0.421875em;
+}
+
+.banner__image {
+  max-width: var(--image-size);
+}
+
+.banner__image img {
+  width: 100%;
+}
+
+.fa-arrow-right {
+  margin-left: 1.2em;
+}
+
+/* media querie for header */
+
+/* header end */
+
+/* main start */
+main {
+  /* common */
+  --sect-width: 105em;
+
+  /* players */
+  --column-layout: repeat(3, 1fr);
+  --col-gap: 3em;
+  --row-gap: 2.7em;
+  --player-width: 33em;
+  --player-img-width: 30em;
+  --title-font-size: 2.8rem;
+
+  /* highlights */
+  --desc-width: 46.6em;
+  --desc-pad: 1.2em;
+  --title-font-size: 3rem;
+  --title-pad: 0.267em;
+  --highlights-img-width: 56.7em;
+}
+
+/* players */
+.players {
+  display: grid;
+  grid-template-columns: var(--column-layout);
+  column-gap: var(--col-gap);
+  row-gap: var(--row-gap);
+  max-width: var(--sect-width);
+  margin: 70px auto 165px auto;
+}
+
+.player {
+  max-width: var(--player-width);
+  padding: 1.5em;
+  box-shadow: 0 0 4em rgba(0, 0, 0, 0.15);
+}
+
+.player__image {
+  max-width: var(--player-img-width);
+}
+
+.player__image img {
+  width: 100%;
+}
+
+.player__title {
+  font-size: var(--title-font-size);
+}
+
+.player__desc {
+  font-size: var(--font-size);
+}
+
+/* highlights */
+.highlights {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: var(--sect-width);
+  margin: var(--center-align);
+}
+
+.highlights__desc {
+  max-width: var(--desc-width);
+  padding: var(--desc-pad);
+}
+.highlights__title {
+  font-size: var(--title-font-size);
+  padding-bottom: var(--title-pad);
+}
+.highlights__txt {
+  font-size: var(--font-size);
+  padding-bottom: 1.5em;
+}
+
+.highlights__image {
+  max-width: var(--highlights-img-width);
+}
+
+.highlights__image img {
+  width: 100%;
+}
+/* main end */
+
+/* footer start */
+footer {
+  --footer-width: 48.387em;
+  --icons-size: 1.707rem;
+  --icons-color: #969bab;
+  --desc-font-size: 1.8rem;
+}
+
+.footer {
+  max-width: var(--footer-width);
+  margin: 15.8em auto 6.3em auto;
+}
+/* logo */
+.footer__logo {
+  margin: var(--center-align);
+}
+.footer__logo img {
+  width: 100%;
+}
+
+/* nav */
+.nav__list--align-center {
+  justify-content: center;
+  margin: 2em 0;
+}
+.nav__item--footer {
+  font-size: var(--icons-size);
+  color: var(--icons-color);
+}
+
+.footer__desc {
+  font-size: var(--desc-font-size);
+  text-align: center;
+  position: relative;
+  left: -1.1em;
+}
+
+/* footer end */

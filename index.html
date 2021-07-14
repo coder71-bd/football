@@ -16,27 +16,44 @@
   </head>
   <body>
     <!-- header -->
-    <header>
+    <header class="header">
       <!-- nav -->
-      <nav>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Clubs</a></li>
-          <li><a href="#">World Cup 2023</a></li>
-          <li><a href="#">Upcoming matches</a></li>
-          <li><a href="#">contact</a></li>
-          <li>
-            <a href="#"><i class="fas fa-sign-in-alt"></i> login</a>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a class="nav__link" href="#home">Home</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#players">Players</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#highlights">Highlights</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#contact">techniques</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">contact</a>
+          </li>
+          <li class="nav__item nav__item--align-right">
+            <a href="#">
+              <button class="btn">
+                <i class="fas fa-sign-in-alt"></i>
+                <span>login</span>
+              </button>
+            </a>
           </li>
         </ul>
       </nav>
 
       <!-- banner -->
-      <div class="banner">
+      <div id="home" class="banner">
         <!-- banner description -->
         <div class="banner__desc">
           <h1 class="banner__txt">conmebol copa america 2021</h1>
-          <button class="btn">Watch Live</button>
+          <button class="btn">
+            Watch Live <i class="fas fa-arrow-right"></i>
+          </button>
         </div>
 
         <!-- banner image
@@ -54,7 +71,7 @@
 
     <main>
       <!-- players section -->
-      <section class="players">
+      <section id="players" class="players">
         <!-- Neymar Jr -->
         <div class="player">
           <div class="player__image">
@@ -255,7 +272,7 @@
       </section>
 
       <!-- hightlights -->
-      <section class="highlights">
+      <section id="highlights" class="highlights">
         <!-- highlights description -->
         <div class="highlights__desc">
           <h2 class="highlights__title">all highlights copa america 2021</h2>
@@ -266,7 +283,9 @@
             matches.
           </p>
 
-          <button class="btn">watch now</button>
+          <button class="btn">
+            watch now <i class="fas fa-arrow-right"></i>
+          </button>
         </div>
 
         <!-- highlights image -->
@@ -288,18 +307,18 @@
 
       <!-- footer nav -->
       <nav>
-        <ul>
-          <li>
-            <a href="#"><i class="fab fa-instagram"></i></a>
+        <ul class="nav__list nav__list--align-center">
+          <li class="nav__item nav__item--footer">
+            <a class="nav__link" href="#"><i class="fab fa-instagram"></i></a>
           </li>
-          <li>
-            <a href="#"><i class="fab fa-dribbble"></i></a>
+          <li class="nav__item nav__item--footer">
+            <a class="nav__link" href="#"><i class="fab fa-dribbble"></i></a>
           </li>
-          <li>
-            <a href="#"><i class="fab fa-twitter"></i></a>
+          <li class="nav__item nav__item--footer">
+            <a class="nav__link" href="#"><i class="fab fa-twitter"></i></a>
           </li>
-          <li>
-            <a href="#"><i class="fab fa-youtube"></i></a>
+          <li class="nav__item nav__item--footer">
+            <a class="nav__link" href="#"><i class="fab fa-youtube"></i></a>
           </li>
         </ul>
       </nav>
